@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #1b2430;
+  color: #ede6d6;
+}
+
+.stat {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+.ledger-row {
+  border-bottom: 1px solid rgba(237, 230, 214, 0.12);
+}
+
+.ledger-row:last-child {
+  border-bottom: none;
+}
+
+::selection {
+  background-color: #c08a3e;
+  color: #1b2430;
+}
+
+:focus-visible {
+  outline: 2px solid #c08a3e;
+  outline-offset: 2px;
+}
